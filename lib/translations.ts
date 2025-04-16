@@ -8,7 +8,7 @@ export const translations = {
     tiresCount: '5 seturi',
     fuel: 'Combustibil',
     fuelAmount: '9x 100 litri',
-    viewCatalog: 'Vezi toate mașinile',
+    viewCatalog: 'Vezi peste 500+ anunțuri auto',
     address: 'str. Grădina Botanică 9, Chișinău',
     phone: '+373 793 57 755',
     howToParticipate: {
@@ -26,7 +26,7 @@ export const translations = {
     },
     campaign: {
       validity: '📅 Campania este valabilă exclusiv în perioada 16 aprilie – 31 august 2025.',
-      cta: 'Nu rata șansa să câștigi un automobil nou și multe alte premii!'
+      cta: 'Nu rata șansa să câștigi un automobil și multe alte premii!'
     },
     rules: {
       title: 'Regulament',
@@ -45,7 +45,7 @@ export const translations = {
     tiresCount: '5 комплектов',
     fuel: 'Топливо',
     fuelAmount: '9x 100 литров',
-    viewCatalog: 'Смотреть каталог',
+    viewCatalog: 'Смотрите более 500+ автомобильных объявлений',
     address: 'ул. Грэдина Ботаникэ 9, Кишинёв',
     phone: '+373 793 57 755',
     howToParticipate: {
@@ -63,7 +63,7 @@ export const translations = {
     },
     campaign: {
       validity: '📅 Акция действует исключительно с 16 апреля по 31 августа 2025 года.',
-      cta: 'Не упустите шанс выиграть новый автомобиль и множество других призов!'
+      cta: 'Не упустите шанс выиграть автомобиль и множество других призов!'
     },
     rules: {
       title: 'Правила',

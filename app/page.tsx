@@ -80,6 +80,15 @@ export default function Home() {
                 <CarouselNext className="text-white" />
               </Carousel>
             </div>
+
+            <section className="py-16 px-4 text-center">
+          <Button 
+            size="lg" 
+            className="bg-blue-500 text-white hover:bg-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-6 h-auto"
+          >
+            {t.viewCatalog}
+          </Button>
+        </section>
           </div>
         </section>
 
