@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Gift, Car, Fuel, Facebook, Instagram, MessageCircle, BookIcon as TiktokIcon } from 'lucide-react';
+import Link from 'next/link';
 import {
   Carousel,
   CarouselContent,
@@ -82,13 +83,98 @@ export default function Home() {
             </div>
 
             <section className="py-16 px-4 text-center">
-          <Button 
-            size="lg" 
-            className="bg-blue-500 text-white hover:bg-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-6 h-auto"
-          >
-            {t.viewCatalog}
-          </Button>
+          
+
+            <Link href="https://cipauto.md">
+            <Button 
+              size="lg" 
+              className="bg-blue-500 text-white hover:bg-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-6 h-auto"
+            >
+              {t.viewCatalog}
+            </Button>
+          </Link>
+
         </section>
+          </div>
+        </section>
+
+        {/* Promotional Content */}
+        <section className="py-24 px-4 bg-[#1A1A4A]">
+          <div className="max-w-4xl mx-auto text-white">
+            <h2 className="text-3xl font-bold mb-8 text-center">{language === 'ro' ? 'De ce să alegi CipAuto' : 'Почему выбрать CipAuto'}</h2>
+            <div className="grid gap-6 md:grid-cols-2">
+              <Card className="bg-gradient-to-br from-[#2A2A5A] to-[#3A3A7A] border-blue-400/20 shadow-xl">
+                <div className="p-6 flex flex-col h-full">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-blue-500 p-2 rounded-full mr-3">
+                      <Car size={24} className="text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-blue-200">
+                      {language === 'ro' ? 'Garanție Extinsă' : 'Расширенная гарантия'}
+                    </h3>
+                  </div>
+                  <p className="text-lg text-white flex-grow">
+                    {language === 'ro' 
+                      ? 'Premiile nu sunt singurul motiv pentru care merită să-ți alegi o mașină în această perioadă. Începând din aprilie, orice automobil rulat vine la pachet cu garanție de până la 1 an, indiferent de marcă sau model.'
+                      : 'Призы - не единственная причина выбрать автомобиль в этот период. Начиная с апреля, любой подержанный автомобиль поставляется с гарантией до 1 года, независимо от марки или модели.'}
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-[#2A2A5A] to-[#3A3A7A] border-blue-400/20 shadow-xl">
+                <div className="p-6 flex flex-col h-full">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-blue-500 p-2 rounded-full mr-3">
+                      <Fuel size={24} className="text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-blue-200">
+                      {language === 'ro' ? 'Flexibilitate Totală' : 'Полная гибкость'}
+                    </h3>
+                  </div>
+                  <p className="text-lg text-white flex-grow">
+                    {language === 'ro'
+                      ? '12 luni fără griji, îți schimbi mașina prin programul trade-in, fie că sau optezi pentru finanțare prin leasing sau credit. Indiferent de opțiune, toate vehiculele sunt verificate atent, iar procesul de achiziție este rapid, clar și transparent.'
+                      : '12 месяцев без забот, вы меняете свой автомобиль по программе trade-in или выбираете финансирование через лизинг или кредит. Независимо от выбора, все автомобили тщательно проверяются, а процесс покупки быстрый, понятный и прозрачный.'}
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-[#2A2A5A] to-[#3A3A7A] border-blue-400/20 shadow-xl md:col-span-2">
+                <div className="p-6 flex flex-col h-full">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-green-500 p-2 rounded-full mr-3">
+                      <Gift size={24} className="text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-green-200">
+                      {language === 'ro' ? 'Experiență și Încredere' : 'Опыт и доверие'}
+                    </h3>
+                  </div>
+                  <p className="text-lg mb-4 text-white">
+                    {language === 'ro'
+                      ? 'De-a lungul acestor ani, mii de clienți au găsit la CipAuto automobilul potrivit – verificat, pregătit de drum și susținut de servicii esențiale pentru o experiență sigură și completă.'
+                      : 'На протяжении этих лет тысячи клиентов нашли в CipAuto подходящий автомобиль – проверенный, подготовленный к дороге и поддерживаемый основными услугами для безопасного и полного опыта.'}
+                  </p>
+                  <p className="text-lg text-white">
+                    {language === 'ro'
+                      ? 'Astăzi, CipAuto înseamnă mai mult decât vânzări auto – înseamnă încredere, siguranță, soluții flexibile și respect pentru fiecare alegere făcută.'
+                      : 'Сегодня CipAuto – это больше, чем продажа автомобилей – это доверие, безопасность, гибкие решения и уважение к каждому сделанному выбору.'}
+                  </p>
+                </div>
+              </Card>
+            </div>
+
+            <div className="mt-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-8 shadow-2xl border border-white/10">
+              <p className="text-xl font-bold mb-4 text-white text-center">
+                {language === 'ro'
+                  ? 'Nu ai în fiecare zi 15 motive bune să-ți cumperi o mașină sau să o schimbi.'
+                  : 'Не каждый день у вас есть 15 веских причин купить или поменять машину.'}
+              </p>
+              <p className="text-lg italic text-white/90 text-center">
+                {language === 'ro'
+                  ? 'Și, cine știe, poate data viitoare când povestești cum ți-ai luat automobilul, o să începi cu: "Era o promoție aniversară la CipAuto, am câștigat un Hyundai TucsonSUV..."'
+                  : 'И кто знает, может быть, в следующий раз, когда вы будете рассказывать, как приобрели автомобиль, вы начнете с: "Была юбилейная акция в CipAuto, я выиграл Hyundai TucsonSUV..."'}
+              </p>
+            </div>
           </div>
         </section>
 
@@ -158,12 +244,15 @@ export default function Home() {
 
         {/* CTA Section */}
         <section className="py-16 px-4 text-center">
-          <Button 
-            size="lg" 
-            className="bg-blue-500 text-white hover:bg-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-6 h-auto"
-          >
-            {t.viewCatalog}
-          </Button>
+          <Link href="https://cipauto.md">
+            <Button 
+              size="lg" 
+              className="bg-blue-500 text-white hover:bg-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-6 h-auto"
+            >
+              {t.viewCatalog}
+            </Button>
+          </Link>
+          
         </section>
 
         {/* Footer */}
