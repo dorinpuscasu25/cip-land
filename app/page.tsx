@@ -154,11 +154,7 @@ export default function Home() {
                               alt={`Premiu ${index + 1}`}
                               className="w-full h-full "
                             />
-                            {index === 0 && (
-                              <div className="absolute -top-2 -right-2 md:-top-4 md:-right-4 bg-red-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-full transform rotate-12 font-bold shadow-lg z-10 text-sm md:text-lg">
-                                {t.grandPrize}
-                              </div>
-                            )}
+                            
                             
                           </div>
                         </Card>
