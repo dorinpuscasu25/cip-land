@@ -64,14 +64,18 @@ export default function Home() {
   return (
     <>
       <Confetti />
-      <LanguageToggle />
-
+      
       <main className="min-h-screen bg-[#0B0B2B]">
         {/* Top Banner */}
         <div className="bg-blue-600 text-white py-3 px-4 text-center">
           <p className="text-sm md:text-base font-medium">
             🎉 CipAuto împlinește 15 ani – și tu primești cadouri! 🎉
           </p>
+        </div>
+        
+        {/* Language Toggle moved below the banner */}
+        <div className="absolute top-14 right-4 z-50">
+          <LanguageToggle />
         </div>
 
         {/* Hero Section */}
@@ -136,7 +140,7 @@ export default function Home() {
             <section className="py-4 px-4 text-center">
 
 
-              <Link href="https://cipauto.md">
+              <Link href="https://cipauto.md/catalog-auto">
                 <Button
                   size="lg"
                   className="bg-blue-500 text-white hover:bg-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-6 h-auto"
@@ -241,10 +245,10 @@ export default function Home() {
               <div className="bg-[#2A2A5A] p-6 rounded-lg">
                 <p className="text-lg mb-4">{t.howToParticipate.step2}</p>
                 <div className="flex gap-4">
-                  <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
+                  <a href="https://g.page/r/CdUI0m7D9UuzEAE/review" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
                     Google
                   </a>
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
+                  <a href="https://www.facebook.com/cipauto.md" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
                     Facebook
                   </a>
                 </div>
@@ -253,16 +257,16 @@ export default function Home() {
               <div className="bg-[#2A2A5A] p-6 rounded-lg">
                 <p className="text-lg mb-4">{t.howToParticipate.step3}</p>
                 <div className="flex flex-wrap gap-4">
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
+                  <a href="https://www.facebook.com/cipauto.md" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
                     Facebook
                   </a>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
+                  <a href="hhttps://www.instagram.com/cipauto.moldova" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
                     Instagram
                   </a>
                   <a href="https://t.me" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
                     Telegram
                   </a>
-                  <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
+                  <a href="https://www.tiktok.com/@cipauto.md" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
                     TikTok
                   </a>
                 </div>
@@ -273,7 +277,21 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <section className="mt-10 text-center">
+
+
+              <Link href="https://cipauto.md/catalog-auto">
+                <Button
+                  size="lg"
+                  className="bg-blue-500 text-white hover:bg-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-6 h-auto"
+                >
+                  {t.viewCatalog}
+                </Button>
+              </Link>
+
+            </section>
         </section>
+        
 
         {/* Event Details */}
         <section className="py-24 px-4">
@@ -295,7 +313,7 @@ export default function Home() {
 
         {/* CTA Section */}
         <section className="py-16 px-4 text-center">
-          <Link href="https://cipauto.md">
+          <Link href="https://cipauto.md/catalog-auto/">
             <Button
               size="lg"
               className="bg-blue-500 text-white hover:bg-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-6 h-auto"
@@ -324,13 +342,13 @@ export default function Home() {
               <a href="https://www.facebook.com/cipauto.md" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
                 <Facebook size={24} />
               </a>
-              <a href="https://www.instagram.com/cipauto.moldova/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/cipauto.moldova" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
                 <Instagram size={24} />
               </a>
               <a href="https://t.me" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
                 <MessageCircle size={24} />
               </a>
-              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
+              <a href="https://www.tiktok.com/@cipauto.md" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
                 <TiktokIcon size={24} />
               </a>
             </div>
