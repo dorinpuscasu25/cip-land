@@ -300,10 +300,10 @@ export default function Home() {
                   <a href="https://www.facebook.com/cipauto.md" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
                     Facebook
                   </a>
-                  <a href="hhttps://www.instagram.com/cipauto.moldova" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
+                  <a href="https://www.instagram.com/cipauto.moldova" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
                     Instagram
                   </a>
-                  <a href="https://t.me" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
+                  <a href="https://t.me/Cipauto" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
                     Telegram
                   </a>
                   <a href="https://www.tiktok.com/@cipauto.md" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors">
@@ -391,7 +391,7 @@ export default function Home() {
               <a href="https://www.instagram.com/cipauto.moldova" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
                 <Instagram size={24} />
               </a>
-              <a href="https://t.me" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
+              <a href="https://t.me/Cipauto" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
                 <MessageCircle size={24} />
               </a>
               <a href="https://www.tiktok.com/@cipauto.md" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
