@@ -4,7 +4,18 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  images: { unoptimized: true },
+  images: {
+    unoptimized: true,
+    domains: ['cipauto.md'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cipauto.md',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

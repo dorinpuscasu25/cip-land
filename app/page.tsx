@@ -9,6 +9,7 @@ import { Card } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Gift, Car, Fuel, Facebook, Instagram, MessageCircle, BookIcon as TiktokIcon } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Carousel,
   CarouselContent,
@@ -70,7 +71,7 @@ export default function Home() {
         <div className="bg-blue-600 text-white py-3 px-4 text-center">
           <div className="max-w-6xl mx-auto relative">
             <p className="text-sm md:text-base font-medium">
-              🎉 CipAuto împlinește 15 ani – și tu primești cadouri! 🎉
+              🎉CipAuto împlinește 15 ani – și tu primești cadouri!🎉
             </p>
             <div className="absolute top-1/2 right-0 -translate-y-1/2">
               <LanguageToggle />
@@ -149,13 +150,14 @@ export default function Home() {
                       <div className="relative">
                         <Card className="overflow-hidden border-2 border-blue-500/30 shadow-xl">
                           <div className="relative aspect-square">
-                            <img
+                            <Image
                               src={image}
                               alt={`Premiu ${index + 1}`}
-                              className="w-full h-full "
+                              fill
+                              sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                              className="object-cover"
+                              priority={index < 2}
                             />
-                            
-                            
                           </div>
                         </Card>
                       </div>
@@ -367,7 +369,13 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col md:flex-row items-center justify-between text-white mb-8">
               <div className="text-3xl font-bold mb-6 md:mb-0">
-                <img src='https://cipauto.md/images/main/logo.svg' />
+                <Image 
+                  src='https://cipauto.md/images/main/logo.svg' 
+                  alt="CipAuto Logo" 
+                  width={150} 
+                  height={60} 
+                  priority
+                />
               </div>
               <div className="text-center md:text-right">
                 <p className="text-gray-400">{t.address}</p>
