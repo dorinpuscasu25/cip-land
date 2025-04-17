@@ -68,15 +68,57 @@ export default function Home() {
       <main className="min-h-screen bg-[#0B0B2B]">
         {/* Top Banner */}
         <div className="bg-blue-600 text-white py-3 px-4 text-center">
-          <p className="text-sm md:text-base font-medium">
-            🎉 CipAuto împlinește 15 ani – și tu primești cadouri! 🎉
-          </p>
+          <div className="max-w-6xl mx-auto relative">
+            <p className="text-sm md:text-base font-medium">
+              🎉 CipAuto împlinește 15 ani – și tu primești cadouri! 🎉
+            </p>
+            <div className="absolute top-1/2 right-0 -translate-y-1/2">
+              <LanguageToggle />
+            </div>
+          </div>
         </div>
         
-        {/* Language Toggle moved below the banner */}
-        <div className="absolute top-14 right-4 z-50">
-          <LanguageToggle />
-        </div>
+        {/* Schema.org structured data for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Event",
+              "name": "CipAuto 15 ani - Campanie Aniversară",
+              "description": "Campanie aniversară CipAuto cu ocazia împlinirii a 15 ani, cu premii valoroase inclusiv un Hyundai Tucson SUV.",
+              "startDate": "2024-04-01",
+              "endDate": "2024-07-31",
+              "location": {
+                "@type": "Place",
+                "name": "CipAuto Moldova",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Chișinău",
+                  "addressCountry": "Moldova"
+                }
+              },
+              "organizer": {
+                "@type": "Organization",
+                "name": "CipAuto",
+                "url": "https://cipauto.md"
+              },
+              "offers": {
+                "@type": "Offer",
+                "description": "Premiul principal: Hyundai Tucson SUV",
+                "url": "https://cipauto.md/catalog-auto",
+                "availability": "https://schema.org/LimitedAvailability",
+                "price": "0",
+                "priceCurrency": "MDL",
+                "validFrom": "2024-04-01"
+              },
+              "image": [
+                "https://cipauto.md/images/ro/1.jpg",
+                "https://cipauto.md/images/ro/2.jpg"
+              ]
+            })
+          }}
+        />
 
         {/* Hero Section */}
         <section className="relative pt-20 pb-20 px-4">
