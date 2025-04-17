@@ -71,9 +71,9 @@ export default function Home() {
         <div className="bg-blue-600 text-white py-3 px-4 text-center">
           <div className="max-w-6xl mx-auto relative">
             <p className="text-sm md:text-base font-medium">
-              🎉CipAuto împlinește 15 ani – și tu primești cadouri!🎉
+              🎉{language === 'ro' ? 'CipAuto împlinește 15 ani – și tu primești cadouri' : 'CipAuto исполняется 15 лет – и ты получаешь подарки'}🎉
             </p>
-            <div className="absolute top-1/2 right-0 -translate-y-1/2 z-10">
+            <div className="absolute top-1/2 right-2 -translate-y-1/2 z-10">
               <LanguageToggle />
             </div>
           </div>
@@ -183,7 +183,7 @@ export default function Home() {
               <Link href="https://cipauto.md/catalog-auto">
                 <Button
                   size="lg"
-                  className="bg-blue-500 text-white hover:bg-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-6 h-auto"
+                  className="bg-blue-500 text-white hover:bg-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg md:text-xl px-6 md:px-8 py-4 md:py-6 h-auto whitespace-normal"
                 >
                   {t.viewCatalog}
                 </Button>
@@ -323,7 +323,7 @@ export default function Home() {
               <Link href="https://cipauto.md/catalog-auto">
                 <Button
                   size="lg"
-                  className="bg-blue-500 text-white hover:bg-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-6 h-auto"
+                  className="bg-blue-500 text-white hover:bg-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg md:text-xl px-6 md:px-8 py-4 md:py-6 h-auto whitespace-normal"
                 >
                   {t.viewCatalog}
                 </Button>
@@ -356,7 +356,7 @@ export default function Home() {
           <Link href="https://cipauto.md/catalog-auto/">
             <Button
               size="lg"
-              className="bg-blue-500 text-white hover:bg-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-6 h-auto"
+              className="bg-blue-500 text-white hover:bg-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 text-lg md:text-xl px-6 md:px-8 py-4 md:py-6 h-auto whitespace-normal"
             >
               {t.viewCatalog}
             </Button>
